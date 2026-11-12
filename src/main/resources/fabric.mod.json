@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "rubyreign",
+	"version": "Alpha 1",
+	"name": "Ruby Reign",
+	"description": "Adds way too much ruby stuff for modding practice.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "we all outta homepage",
+		"sources": "we all outta github"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/rubyreign/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bauh.rubyreign.RubyReign"
+		],
+		"fabric-datagen": [
+			"bauh.rubyreign.RubyReignDataGenerator"
+		],
+		"client": [
+			"bauh.rubyreign.RubyReignClient"
+		]
+	},
+	"mixins": [
+		"rubyreign.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
